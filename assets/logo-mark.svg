@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="255 260 320 330" role="img" aria-label="Lordevs mark">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE000"/><stop offset="1" stop-color="#E8A800"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F5B400"/><stop offset="1" stop-color="#FFE600"/></linearGradient>
+  </defs>
+  <path d="M370 272 L280 327 Q265 337 265 355 L265 515 Q265 535 285 540 L372 492 Z" fill="url(#g1)"/>
+  <path d="M397 360 L490 410 Q497 415 490 420 L397 470 Z" fill="#FFD400"/>
+  <path d="M300 535 L488 440 Q500 436 511 443 L563 476 Q568 481 562 485 L415 573 Q405 578 395 575 L300 538 Z" fill="url(#g2)"/>
+</svg>

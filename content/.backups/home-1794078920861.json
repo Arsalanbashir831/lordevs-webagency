@@ -1,0 +1,401 @@
+{
+  "output": "index.html",
+  "layout": "default",
+  "meta": {
+    "title": "Web Development Company | Websites, CMS, PPC & SEO – Lordevs",
+    "description": "Lordevs is a web development company building custom business websites, WordPress & Webflow CMS sites, PPC landing pages and SEO/AEO that rank and convert."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": {
+        "line1": "Web development that ranks,",
+        "line2": "converts & <mark>grows</mark>."
+      },
+      "subtitle": "Lordevs is a <b>web design and development company</b> building custom <b>business websites</b>, <b>WordPress & Webflow CMS</b> sites, high-converting <b>PPC landing pages</b> and <b>SEO / AEO</b> that gets you found on Google and in AI search.",
+      "cta": {
+        "label": "Book a Free Call",
+        "href": "#book"
+      },
+      "proof": {
+        "rating": "4.9",
+        "text": "Trusted by 100+ clients"
+      },
+      "logosTitle": "Loved by 100+ big and small brands around the world",
+      "logos": [
+        "ZenZap",
+        "sparkle",
+        "innovio",
+        "Craftgram",
+        "LumLabs"
+      ]
+    },
+    {
+      "type": "workStrip",
+      "ariaLabel": "Selected web design and development projects",
+      "items": [
+        {
+          "tag": "Business Website",
+          "name": "Apex Logistics",
+          "mock": "browser",
+          "theme": 1
+        },
+        {
+          "tag": "CMS Build",
+          "name": "Northwind Media",
+          "mock": "phone",
+          "theme": 2
+        },
+        {
+          "tag": "PPC Landing Page",
+          "name": "SolarPeak",
+          "mock": "chart",
+          "theme": 3
+        },
+        {
+          "tag": "SEO / AEO",
+          "name": "Bright Dental",
+          "mock": "shop",
+          "theme": 4
+        },
+        {
+          "tag": "Website Redesign",
+          "name": "Nova Legal",
+          "mock": "browser",
+          "theme": 5
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "statement": "Lordevs is a web development agency that builds websites that earn their keep – <span>fast, easy to find on Google and AI search, and designed to turn visitors into customers.</span>",
+      "stats": {
+        "projects": {
+          "value": 230,
+          "suffix": "+",
+          "title": "Websites Launched",
+          "text": "Every site ships fast, secure, mobile-friendly and ready to rank on day one."
+        },
+        "clients": {
+          "text": "100+ happy clients"
+        },
+        "satisfaction": {
+          "value": 98,
+          "suffix": "%",
+          "title": "Client Satisfaction",
+          "text": "Helping businesses grow through data-driven web design and SEO."
+        },
+        "growth": {
+          "value": 3,
+          "suffix": "X",
+          "title": "Avg. Organic Traffic Growth",
+          "text": "More qualified visitors within 6 months of launch."
+        },
+        "countries": {
+          "title": "Our Clients in 35+ Countries",
+          "text": "Trusted by businesses across 35+ countries worldwide.",
+          "dots": [
+            "#0B0B0B",
+            "#FFC21A",
+            "#fff",
+            "#6b6b6b",
+            "#F3E3A6",
+            "#FFD866"
+          ]
+        }
+      }
+    },
+    {
+      "type": "techBand",
+      "ariaLabel": "Web development tools and platforms we use",
+      "items": [
+        "WordPress",
+        "Webflow",
+        "Next.js",
+        "Shopify",
+        "Sanity",
+        "Strapi",
+        "Google Ads",
+        "GA4",
+        "Search Console",
+        "Schema.org",
+        "Lighthouse",
+        "Figma"
+      ]
+    },
+    {
+      "type": "services",
+      "tag": "Web Development Services",
+      "title": "Everything your website needs<br>to win online.",
+      "lead": "Five web development services that work together – from custom website design to page one of Google and citations in AI answers.",
+      "items": [
+        {
+          "icon": "globe",
+          "style": "yellow",
+          "title": "Business Website Design & Development",
+          "text": "Custom business websites designed around your brand and built to convert – responsive on every device, 90+ Lighthouse speed and on-page SEO set up before launch. Never templated.",
+          "linkLabel": "Plan my website",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "layers",
+          "style": "stone",
+          "title": "WordPress, Webflow & Headless CMS",
+          "text": "Easy-to-edit WordPress, Webflow or headless CMS (Sanity, Strapi) websites your team can update on its own – pages, blogs and products, no developer needed. You own everything.",
+          "linkLabel": "Explore CMS options",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "target",
+          "style": "cream",
+          "title": "PPC Landing Page Design",
+          "text": "Fast, message-matched landing pages for Google Ads and Meta campaigns, with A/B testing and GA4 conversion tracking built in – so every click costs less and converts more.",
+          "linkLabel": "Boost my ad results",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "search",
+          "style": "dark",
+          "title": "SEO & AEO Services",
+          "text": "Technical SEO, keyword-led content and schema markup that rank you on Google – plus Answer Engine Optimisation so ChatGPT, Gemini, Perplexity and Google AI Overviews can find and cite your business.",
+          "linkLabel": "Get found online",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "wrench",
+          "style": "yellow",
+          "title": "Website Redesign & Repair",
+          "text": "Slow, outdated or broken website? We audit it, fix bugs, speed and security issues, then redesign or migrate it with 301 redirects in place – so you keep your Google rankings.",
+          "linkLabel": "Fix my website",
+          "linkHref": "#book"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "tag": "Comparison",
+      "title": "But, why would you want<br>to work with us?",
+      "other": {
+        "title": "Other Agencies",
+        "items": [
+          "Template sites with no strategy",
+          "Pretty design, zero SEO",
+          "Locked into a CMS you can't edit",
+          "Slow pages that waste ad spend",
+          "No tracking, no reporting"
+        ]
+      },
+      "us": {
+        "title": "Lordevs",
+        "items": [
+          "Custom, conversion-focused web design",
+          "SEO & AEO built in from day one",
+          "Easy-to-edit CMS – you own everything",
+          "90+ Lighthouse speed on every page",
+          "Transparent analytics & monthly reports"
+        ]
+      },
+      "trustedText": "Trusted by growing businesses worldwide",
+      "logos": [
+        "ZenZap",
+        "sparkle",
+        "innovio",
+        "Craftgram",
+        "LumLabs"
+      ]
+    },
+    {
+      "type": "why",
+      "tag": "Why it matters",
+      "title": "Why does your business need<br>a great website?",
+      "cards": [
+        {
+          "icon": "globe",
+          "style": "yellow",
+          "title": "Always-On Presence",
+          "text": "Your website is your 24/7 storefront – and the first impression customers judge you by."
+        },
+        {
+          "icon": "search",
+          "style": "stone",
+          "title": "Found on Google & AI",
+          "text": "SEO and AEO put you in front of people already searching – on Google, in AI Overviews and in ChatGPT answers."
+        },
+        {
+          "icon": "dollar",
+          "style": "cream",
+          "title": "Lower Cost Per Lead",
+          "text": "Fast landing pages make every ad pound or dollar work harder."
+        },
+        {
+          "icon": "bolt",
+          "style": "cream",
+          "wide": true,
+          "title": "Higher Conversions",
+          "text": "Clear messaging, speed and smart calls-to-action turn more clicks into enquiries.",
+          "linkLabel": "Book a Call",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "wrench",
+          "style": "yellow",
+          "wide": true,
+          "title": "Edit Without Developers",
+          "text": "A friendly CMS lets your team publish and update content in minutes.",
+          "linkLabel": "See our CMS builds",
+          "linkHref": "#services"
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "tag": "Testimonials",
+      "title": "Why everyone's talking<br>about our websites",
+      "items": [
+        {
+          "variant": "hero",
+          "logo": "sparkle",
+          "quote": "Our new website is faster, easier to manage and brings in real enquiries every week. Within six months our leads had doubled.",
+          "name": "Guillermo R.",
+          "role": "Head of Marketing",
+          "avatarBg": "#FFC21A"
+        },
+        {
+          "quote": "The PPC landing page cut our cost per lead by almost half. Fast, focused and exactly what our campaigns needed.",
+          "name": "Priya R.",
+          "role": "Marketing Lead",
+          "avatarBg": "#0B0B0B",
+          "avatarColor": "#FFC21A"
+        },
+        {
+          "quote": "Finally a CMS my team can use without calling a developer. Updates that took days now take minutes.",
+          "name": "Daniel Q.",
+          "role": "Founder",
+          "avatarBg": "#F3E3A6"
+        },
+        {
+          "quote": "We started showing up on Google and in AI answers within a few months. The SEO work paid for itself.",
+          "name": "Sarah W.",
+          "role": "Owner, Bright Dental",
+          "avatarBg": "#FFD866"
+        },
+        {
+          "variant": "accent",
+          "logo": "sparkle",
+          "quote": "I have worked with a few agencies, but none were this transparent. Clear reporting every month and a website that actually performs.",
+          "name": "James H.",
+          "role": "COO",
+          "avatarBg": "#0B0B0B",
+          "avatarColor": "#FFC21A"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "tag": "Process",
+      "title": "Our simple 3-step process to<br>skyrocket your business.",
+      "lead": "Our website development process runs from keyword research to launch and ongoing SEO – one team looks after your entire web presence.",
+      "steps": [
+        {
+          "icon": "search",
+          "title": "Plan & Research",
+          "text": "Week 1: we map your goals, audience, keywords and competitors into a clear sitemap and roadmap."
+        },
+        {
+          "icon": "code",
+          "title": "Design & Build",
+          "text": "Weeks 2–5: we design on-brand pages, then build them fast, responsive and accessible on the CMS that suits you."
+        },
+        {
+          "icon": "trending",
+          "title": "Launch & Rank",
+          "text": "Launch and beyond: we go live, set up analytics and keep improving SEO, AEO, speed and conversions month after month."
+        }
+      ],
+      "cta": {
+        "label": "30 Min Free Consultation",
+        "href": "#book"
+      }
+    },
+    {
+      "type": "booking",
+      "tag": "Free Consultation",
+      "title": "Let's talk about growing<br>your business.",
+      "panel": {
+        "host": "Lordevs Team",
+        "subtitle": "Strategy Call",
+        "title": "30 Min Meeting",
+        "details": [
+          "⏱ 30 min",
+          "💻 Google Meet",
+          "🌍 Your local timezone"
+        ]
+      },
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:30 AM",
+        "01:00 PM",
+        "02:30 PM",
+        "04:00 PM"
+      ],
+      "confirmLabel": "Confirm booking",
+      "emailSubject": "Consultation request"
+    },
+    {
+      "type": "faq",
+      "tag": "FAQ",
+      "title": "No more confusion – just<br>answers.",
+      "items": [
+        {
+          "q": "What services does Lordevs offer?",
+          "a": "Lordevs is a web development agency offering five services: custom business website design and development, CMS development on WordPress, Webflow or a headless CMS, PPC landing pages for Google and Meta Ads, SEO and AEO optimisation, and website redesign and repair. One team handles strategy, design, build, launch and ongoing optimisation."
+        },
+        {
+          "q": "How much does a business website cost?",
+          "a": "The cost of a business website depends on the number of pages, how custom the design is, the CMS, integrations such as booking or e-commerce, and who writes the content. A single landing page costs far less than a multi-page site with a blog. After a free 30-minute consultation we send a fixed, itemised quote with no hidden fees."
+        },
+        {
+          "q": "How long does it take to build a website?",
+          "a": "A typical business website takes 3–6 weeks from kickoff to launch. A single PPC landing page can go live in 1–2 weeks, while larger CMS or e-commerce builds take longer. You get a clear, week-by-week timeline after our free consultation, and we share progress at every stage."
+        },
+        {
+          "q": "What is a CMS and do I need one?",
+          "a": "A CMS (Content Management System) such as WordPress or Webflow lets you edit pages, blogs and images yourself without touching code. If you plan to update your website regularly, you need one. We recommend the best CMS for your goals, build it, and train your team to use it."
+        },
+        {
+          "q": "Should I choose WordPress or Webflow for my business website?",
+          "a": "Choose WordPress if you need a large plugin ecosystem, WooCommerce e-commerce or full hosting control. Choose Webflow if you want design freedom, built-in hosting and an editor non-technical teams find simple. For high-traffic or multi-channel content, a headless CMS like Sanity or Strapi with Next.js is often the best fit."
+        },
+        {
+          "q": "How are PPC landing pages different from a normal website?",
+          "a": "A PPC landing page has one goal: turning paid clicks from Google Ads or Meta Ads into leads or sales. Unlike a full website, it removes navigation and distractions, matches the exact message of your ad and loads in under two seconds, which improves Quality Score and lowers your cost per lead."
+        },
+        {
+          "q": "What is AEO and how is it different from SEO?",
+          "a": "SEO (Search Engine Optimisation) helps your website rank in Google search results. AEO (Answer Engine Optimisation) structures your content, FAQs and schema markup so AI tools like ChatGPT, Gemini, Perplexity and Google AI Overviews can understand, quote and recommend your business. They work together, and Lordevs does both."
+        },
+        {
+          "q": "How long does SEO take to show results?",
+          "a": "Most websites see early SEO improvements within 3 months and meaningful traffic growth within 6 months, depending on competition, site history and content. Lordevs clients average 3X organic traffic growth within six months of launch. We send monthly reports so you can see exactly which pages and keywords are improving."
+        },
+        {
+          "q": "Will a website redesign hurt my Google rankings?",
+          "a": "Not when it is done properly. Before a redesign we map every existing URL, keep or improve your best-ranking content, set up 301 redirects and monitor Google Search Console after launch. Most ranking drops after a redesign come from missing redirects or deleted content, and our migration process prevents both."
+        },
+        {
+          "q": "Do I own my website after it is built?",
+          "a": "Yes. You own your domain, design, content and CMS accounts outright. We hand over every login at launch, train your team to edit the site, and never lock you into proprietary systems or contracts you cannot leave."
+        },
+        {
+          "q": "Do you work with clients in other countries?",
+          "a": "Yes. Lordevs works with businesses in more than 35 countries. Every project runs remotely, with calls on Google Meet booked in your local time zone, a shared project timeline and a single point of contact from kickoff to launch."
+        },
+        {
+          "q": "Do you provide support after launch?",
+          "a": "Yes. After launch we offer website maintenance, hosting guidance, security and plugin updates, backups and monthly SEO and performance reporting, so your website stays fast, secure and keeps climbing in search results."
+        }
+      ]
+    }
+  ]
+}

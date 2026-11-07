@@ -1,0 +1,76 @@
+{
+  "output": "privacy.html",
+  "layout": "legal",
+  "meta": {
+    "title": "Privacy & Cookie Policy – Lordevs",
+    "description": "How Lordevs handles personal information and cookies on this website."
+  },
+
+  "sections": [
+    {
+      "type": "legal",
+      "title": "Privacy & Cookie Policy",
+      "updated": "7 November 2026",
+      "blocks": [
+        {
+          "paragraphs": [
+            "Lordevs (\"we\", \"us\") is a web development agency. This policy explains what information we collect through this website, how we use it, and the choices you have."
+          ]
+        },
+        {
+          "heading": "1. Information we collect",
+          "list": [
+            "<strong>Information you send us</strong> – your name, email address, phone number or WhatsApp number and any details about your project when you email us, message us on WhatsApp, or request a consultation.",
+            "<strong>Technical information</strong> – like your IP address, browser type and pages visited, which your browser sends automatically when you load the site."
+          ]
+        },
+        {
+          "heading": "2. Cookies and local storage",
+          "paragraphs": [
+            "Cookies and local storage are small pieces of data saved in your browser. At the moment this website only stores <strong>your cookie choice</strong> (accept or decline) in your browser's local storage so we don't ask you again on every visit.",
+            "If we add analytics or marketing tools in the future, we will only enable them for visitors who accept, and we will update this policy. You can clear your saved choice at any time by clearing this site's data in your browser settings."
+          ]
+        },
+        {
+          "heading": "3. How we use information",
+          "list": [
+            "To reply to your enquiries and provide quotes or services you ask for.",
+            "To schedule consultations and manage our client relationships.",
+            "To keep the website secure and working properly."
+          ]
+        },
+        {
+          "heading": "4. Sharing",
+          "paragraphs": [
+            "We do not sell your personal information. We may share it only with service providers who help us run our business (for example email or messaging providers), or when the law requires it. This site loads fonts and code libraries from third-party content delivery networks (such as Google Fonts and cdnjs), which means your IP address is visible to those providers when the page loads."
+          ]
+        },
+        {
+          "heading": "5. How long we keep information",
+          "paragraphs": [
+            "We keep enquiry and project information only for as long as it is needed for the purposes above or as the law requires, and then delete or anonymise it."
+          ]
+        },
+        {
+          "heading": "6. Your rights",
+          "paragraphs": [
+            "Depending on where you live, you may have the right to access, correct or delete the personal information we hold about you, and to object to or restrict certain processing. To make a request, contact us using the details below."
+          ]
+        },
+        {
+          "heading": "7. Contact us",
+          "list": [
+            "Email: <a href=\"mailto:{{email}}\">{{email}}</a>",
+            "WhatsApp: <a href=\"{{whatsappUrl}}\" target=\"_blank\" rel=\"noopener\">{{whatsapp}}</a>"
+          ]
+        },
+        {
+          "heading": "8. Changes to this policy",
+          "paragraphs": [
+            "We may update this policy from time to time. The \"last updated\" date at the top shows when it last changed."
+          ]
+        }
+      ]
+    }
+  ]
+}

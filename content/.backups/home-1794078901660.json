@@ -1,0 +1,377 @@
+{
+  "output": "index.html",
+  "layout": "default",
+  "meta": {
+    "title": "Lordevs – Web Development Agency",
+    "description": "Lordevs is a web development agency building business websites, CMS solutions, PPC landing pages and SEO/AEO optimisation that turn visitors into customers."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": {
+        "line1": "Websites that rank,",
+        "line2": "convert & <mark>grow</mark>."
+      },
+      "subtitle": "Lordevs is a web development agency crafting <b>business websites</b>, <b>CMS</b> builds, <b>PPC landing pages</b> and <b>SEO / AEO</b> that turn visitors into customers.",
+      "cta": {
+        "label": "Book a Free Call",
+        "href": "#book"
+      },
+      "proof": {
+        "rating": "4.9",
+        "text": "Trusted by 100+ clients"
+      },
+      "logosTitle": "Loved by 100+ big and small brands around the world",
+      "logos": [
+        "ZenZap",
+        "sparkle",
+        "innovio",
+        "Craftgram",
+        "LumLabs"
+      ]
+    },
+    {
+      "type": "workStrip",
+      "ariaLabel": "Selected work",
+      "items": [
+        {
+          "tag": "Business Website",
+          "name": "Apex Logistics",
+          "mock": "browser",
+          "theme": 1
+        },
+        {
+          "tag": "CMS Build",
+          "name": "Northwind Media",
+          "mock": "phone",
+          "theme": 2
+        },
+        {
+          "tag": "PPC Landing Page",
+          "name": "SolarPeak",
+          "mock": "chart",
+          "theme": 3
+        },
+        {
+          "tag": "SEO / AEO",
+          "name": "Bright Dental",
+          "mock": "shop",
+          "theme": 4
+        },
+        {
+          "tag": "Business Website",
+          "name": "Nova Legal",
+          "mock": "browser",
+          "theme": 5
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "statement": "We build websites that earn their keep – <span>fast, easy to find and designed to turn visitors into customers.</span>",
+      "stats": {
+        "projects": {
+          "value": 230,
+          "suffix": "+",
+          "title": "Websites Launched",
+          "text": "Every site ships fast, secure and ready to rank on day one."
+        },
+        "clients": {
+          "text": "25+ happy clients"
+        },
+        "satisfaction": {
+          "value": 98,
+          "suffix": "%",
+          "title": "Client Satisfaction",
+          "text": "Helping businesses grow through data-driven design and SEO."
+        },
+        "growth": {
+          "value": 3,
+          "suffix": "X",
+          "title": "Avg. Organic Traffic Growth",
+          "text": "More qualified visitors within 6 months of launch."
+        },
+        "countries": {
+          "title": "Our Clients in 35+ Countries",
+          "text": "Trusted by global brands across 35+ countries worldwide.",
+          "dots": [
+            "#0B0B0B",
+            "#FFC21A",
+            "#fff",
+            "#6b6b6b",
+            "#F3E3A6",
+            "#FFD866"
+          ]
+        }
+      }
+    },
+    {
+      "type": "techBand",
+      "ariaLabel": "Tools and platforms we use",
+      "items": [
+        "WordPress",
+        "Webflow",
+        "Next.js",
+        "Shopify",
+        "Sanity",
+        "Strapi",
+        "Google Ads",
+        "GA4",
+        "Search Console",
+        "Schema.org",
+        "Lighthouse",
+        "Figma"
+      ]
+    },
+    {
+      "type": "services",
+      "tag": "Services",
+      "title": "Everything your website needs<br>to win online.",
+      "lead": "Five focused services that work together – from the first click to the first page of Google.",
+      "items": [
+        {
+          "icon": "globe",
+          "style": "yellow",
+          "title": "Business Websites",
+          "text": "Fast, responsive, brand-first websites that build trust and turn visitors into enquiries – custom designed, never templated.",
+          "linkLabel": "Plan my website",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "layers",
+          "style": "stone",
+          "title": "CMS Development",
+          "text": "WordPress, Webflow or headless CMS builds your team can edit on its own – update pages, blogs and products without calling a developer.",
+          "linkLabel": "Explore CMS options",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "target",
+          "style": "cream",
+          "title": "PPC Landing Pages",
+          "text": "High-converting, lightning-fast landing pages for your pay-per-click campaigns on Google and Meta – with A/B testing and conversion tracking built in.",
+          "linkLabel": "Boost my ad results",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "search",
+          "style": "dark",
+          "title": "SEO & AEO Optimisation",
+          "text": "Technical SEO, content and schema that rank you on Google – and get your business cited by AI answer engines like ChatGPT and Perplexity.",
+          "linkLabel": "Get found online",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "wrench",
+          "style": "yellow",
+          "title": "Website Fix & Redesign",
+          "text": "Slow, outdated or broken? We audit your existing site, fix bugs, speed and security issues, then refresh or migrate it – without losing your rankings.",
+          "linkLabel": "Fix my website",
+          "linkHref": "#book"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "tag": "Comparison",
+      "title": "But, why would you want<br>to work with us?",
+      "other": {
+        "title": "Other Agencies",
+        "items": [
+          "Template sites with no strategy",
+          "Pretty design, zero SEO",
+          "Locked into a CMS you can't edit",
+          "Slow pages that waste ad spend",
+          "No tracking, no reporting"
+        ]
+      },
+      "us": {
+        "title": "Lordevs",
+        "items": [
+          "Custom, conversion-focused design",
+          "SEO & AEO built in from day one",
+          "Easy-to-edit CMS – you own everything",
+          "90+ Lighthouse speed on every page",
+          "Transparent analytics & monthly reports"
+        ]
+      },
+      "trustedText": "Trusted by growing businesses worldwide",
+      "logos": [
+        "ZenZap",
+        "sparkle",
+        "innovio",
+        "Craftgram",
+        "LumLabs"
+      ]
+    },
+    {
+      "type": "why",
+      "tag": "Why it matters",
+      "title": "Why does your business need<br>a great website?",
+      "cards": [
+        {
+          "icon": "globe",
+          "style": "yellow",
+          "title": "Always-On Presence",
+          "text": "Your website is your 24/7 storefront – and the first impression customers judge you by."
+        },
+        {
+          "icon": "search",
+          "style": "stone",
+          "title": "Found on Google & AI",
+          "text": "SEO and AEO put you in front of people already searching for what you sell."
+        },
+        {
+          "icon": "dollar",
+          "style": "cream",
+          "title": "Lower Cost Per Lead",
+          "text": "Fast landing pages make every ad pound or dollar work harder."
+        },
+        {
+          "icon": "bolt",
+          "style": "cream",
+          "wide": true,
+          "title": "Higher Conversions",
+          "text": "Clear messaging, speed and smart calls-to-action turn more clicks into enquiries.",
+          "linkLabel": "Book a Call",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "wrench",
+          "style": "yellow",
+          "wide": true,
+          "title": "Edit Without Developers",
+          "text": "A friendly CMS lets your team publish and update content in minutes.",
+          "linkLabel": "See our CMS builds",
+          "linkHref": "#services"
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "tag": "Testimonials",
+      "title": "Why everyone's talking<br>about our websites",
+      "items": [
+        {
+          "variant": "hero",
+          "logo": "sparkle",
+          "quote": "Our new website is faster, easier to manage and brings in real enquiries every week. Within six months our leads had doubled.",
+          "name": "Guillermo R.",
+          "role": "Head of Marketing",
+          "avatarBg": "#FFC21A"
+        },
+        {
+          "quote": "The PPC landing page cut our cost per lead by almost half. Fast, focused and exactly what our campaigns needed.",
+          "name": "Priya R.",
+          "role": "Marketing Lead",
+          "avatarBg": "#0B0B0B",
+          "avatarColor": "#FFC21A"
+        },
+        {
+          "quote": "Finally a CMS my team can use without calling a developer. Updates that took days now take minutes.",
+          "name": "Daniel Q.",
+          "role": "Founder",
+          "avatarBg": "#F3E3A6"
+        },
+        {
+          "quote": "We started showing up on Google and in AI answers within a few months. The SEO work paid for itself.",
+          "name": "Sarah W.",
+          "role": "Owner, Bright Dental",
+          "avatarBg": "#FFD866"
+        },
+        {
+          "variant": "accent",
+          "logo": "sparkle",
+          "quote": "\"I have worked with a few agencies, but none were this transparent. Clear reporting every month and a website that actually performs.\"",
+          "name": "James H.",
+          "role": "COO",
+          "avatarBg": "#0B0B0B",
+          "avatarColor": "#FFC21A"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "tag": "Process",
+      "title": "Our simple 3-step process to<br>skyrocket your business.",
+      "lead": "From keyword research to launch and ongoing optimisation – one team looks after your entire web presence.",
+      "steps": [
+        {
+          "icon": "search",
+          "title": "Plan & Research",
+          "text": "We map your goals, audience, keywords and competitors into a clear sitemap and roadmap."
+        },
+        {
+          "icon": "code",
+          "title": "Design & Build",
+          "text": "We design on-brand pages, then build them fast, responsive and accessible on the CMS that suits you."
+        },
+        {
+          "icon": "trending",
+          "title": "Launch & Rank",
+          "text": "We go live, set up analytics and keep improving SEO, speed and conversions month after month."
+        }
+      ],
+      "cta": {
+        "label": "30 Min Free Consultation",
+        "href": "#book"
+      }
+    },
+    {
+      "type": "booking",
+      "tag": "Free Consultation",
+      "title": "Let's talk about growing<br>your business.",
+      "panel": {
+        "host": "Lordevs Team",
+        "subtitle": "Strategy Call",
+        "title": "30 Min Meeting",
+        "details": [
+          "⏱ 30 min",
+          "💻 Google Meet",
+          "🌍 Your local timezone"
+        ]
+      },
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:30 AM",
+        "01:00 PM",
+        "02:30 PM",
+        "04:00 PM"
+      ],
+      "confirmLabel": "Confirm booking",
+      "emailSubject": "Consultation request"
+    },
+    {
+      "type": "faq",
+      "tag": "FAQ",
+      "title": "No more confusion – just<br>answers.",
+      "items": [
+        {
+          "q": "What services does your agency offer?",
+          "a": "We focus on five things: business websites, CMS development, PPC landing pages, SEO & AEO optimisation, and fixing or redesigning existing websites – everything a business needs to look credible, get found and convert."
+        },
+        {
+          "q": "What is a CMS and do I need one?",
+          "a": "A CMS (Content Management System) such as WordPress or Webflow lets you edit pages, blogs and images yourself without touching code. If you plan to update your site regularly, yes – we will recommend the best fit and train your team."
+        },
+        {
+          "q": "How are PPC landing pages different from a normal website?",
+          "a": "A PPC landing page has one goal: turn paid clicks from Google or Meta Ads into leads or sales. They are fast, distraction-free and message-matched to your ad, which lowers your cost per lead."
+        },
+        {
+          "q": "What is AEO and how is it different from SEO?",
+          "a": "SEO helps you rank in search results. AEO (Answer Engine Optimisation) structures your content and schema so AI tools like ChatGPT, Gemini and Perplexity can understand and cite your business. We do both."
+        },
+        {
+          "q": "How long does a website project take?",
+          "a": "A typical business website takes 3–6 weeks. Landing pages can go live in 1–2 weeks. You will get a clear timeline after our free consultation."
+        },
+        {
+          "q": "Do you provide support after launch?",
+          "a": "Yes. We offer maintenance, hosting guidance, security updates and monthly SEO and performance reporting so your website keeps improving."
+        }
+      ]
+    }
+  ]
+}

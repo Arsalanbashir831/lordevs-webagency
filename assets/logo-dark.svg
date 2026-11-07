@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="255 260 1280 330" role="img" aria-label="Lordevs">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE000"/><stop offset="1" stop-color="#E8A800"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F5B400"/><stop offset="1" stop-color="#FFE600"/></linearGradient>
+  </defs>
+  <!-- mark -->
+  <path d="M370 272 L280 327 Q265 337 265 355 L265 515 Q265 535 285 540 L372 492 Z" fill="url(#g1)"/>
+  <path d="M397 360 L490 410 Q497 415 490 420 L397 470 Z" fill="#FFD400"/>
+  <path d="M300 535 L488 440 Q500 436 511 443 L563 476 Q568 481 562 485 L415 573 Q405 578 395 575 L300 538 Z" fill="url(#g2)"/>
+  <!-- wordmark -->
+  <g fill="none" stroke-width="28" stroke-linejoin="miter">
+    <g stroke="#0B0B0B">
+      <path d="M629 350 V471 H725"/>
+      <ellipse cx="808" cy="417.500" rx="48" ry="53.500"/>
+      <path d="M904 350 V485 M904 364 H940 A34 34 0 0 1 940 432 H904 M940 432 L985 485"/>
+      <path d="M1029 350 V485 M1029 364 H1065 A53.500 53.500 0 0 1 1065 471 H1029"/>
+    </g>
+    <g stroke="#FFC21A">
+      <path d="M1250 364 H1174 V471 H1250 M1174 417.500 H1240"/>
+      <path fill="#FFC21A" stroke="none" d="M1262 350 H1298 L1320 428 L1342 350 H1378 L1338 485 H1302 Z"/>
+      <path stroke-linejoin="round" d="M1496 382 Q1496 364 1472 364 H1428 Q1405 364 1405 390 Q1405 417 1430 417 H1475 Q1503 417 1503 444 Q1503 471 1475 471 H1428 Q1408 471 1405 454"/>
+    </g>
+  </g>
+</svg>

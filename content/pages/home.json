@@ -1,0 +1,401 @@
+{
+  "output": "index.html",
+  "layout": "default",
+  "meta": {
+    "title": "Branded Web Design & Brand Identity Agency – Lordevs",
+    "description": "Lordevs builds distinctive, custom branded websites, brand identity systems, custom CMS, and high-converting digital platforms that define your brand and scale your business."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": {
+        "line1": "Branded web design that defines,",
+        "line2": "engages & <mark>scales</mark>."
+      },
+      "subtitle": "Lordevs is a <b>brand strategy and web design agency</b> building bespoke <b>branded business websites</b>, premium <b>brand identity systems</b>, custom <b>WordPress & Webflow CMS</b> sites, and digital experiences that turn audience attention into brand authority.",
+      "cta": {
+        "label": "Book a Brand Strategy Call",
+        "href": "#book"
+      },
+      "proof": {
+        "rating": "4.9",
+        "text": "Trusted by 100+ iconic brands"
+      },
+      "logosTitle": "Loved by 100+ ambitious startups and category leaders around the world",
+      "logos": [
+        "ZenZap",
+        "sparkle",
+        "innovio",
+        "Craftgram",
+        "LumLabs"
+      ]
+    },
+    {
+      "type": "workStrip",
+      "ariaLabel": "Selected branded web design and identity projects",
+      "items": [
+        {
+          "tag": "Brand Identity & Web",
+          "name": "Apex Logistics",
+          "mock": "browser",
+          "theme": 1
+        },
+        {
+          "tag": "Custom CMS Experience",
+          "name": "Northwind Media",
+          "mock": "phone",
+          "theme": 2
+        },
+        {
+          "tag": "Campaign Landing Site",
+          "name": "SolarPeak",
+          "mock": "chart",
+          "theme": 3
+        },
+        {
+          "tag": "Brand Refresh & Design",
+          "name": "Bright Dental",
+          "mock": "shop",
+          "theme": 4
+        },
+        {
+          "tag": "Enterprise Digital Brand",
+          "name": "Nova Legal",
+          "mock": "browser",
+          "theme": 5
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "statement": "Lordevs is a brand-led web agency that designs websites with distinct character – <span>memorable, aligned with your market position, and engineered to turn casual visitors into loyal brand advocates.</span>",
+      "stats": {
+        "projects": {
+          "value": 230,
+          "suffix": "+",
+          "title": "Branded Websites Launched",
+          "text": "Every site delivers bespoke design, crisp typography, custom motion, and instant brand recognition."
+        },
+        "clients": {
+          "text": "100+ happy clients"
+        },
+        "satisfaction": {
+          "value": 98,
+          "suffix": "%",
+          "title": "Client Satisfaction",
+          "text": "Helping companies establish market authority through strategic design and web architecture."
+        },
+        "growth": {
+          "value": 4,
+          "suffix": "X",
+          "title": "Avg. Brand Value Perception",
+          "text": "Higher engagement and premium positioning within 90 days of brand launch."
+        },
+        "countries": {
+          "title": "Our Brand Partners in 35+ Countries",
+          "text": "Trusted by visionary business leaders across 35+ countries worldwide.",
+          "dots": [
+            "#0B0B0B",
+            "#FFC21A",
+            "#fff",
+            "#6b6b6b",
+            "#F3E3A6",
+            "#FFD866"
+          ]
+        }
+      }
+    },
+    {
+      "type": "techBand",
+      "ariaLabel": "Brand design tools and development platforms we use",
+      "items": [
+        "Figma",
+        "Webflow",
+        "WordPress",
+        "Next.js",
+        "Sanity",
+        "Strapi",
+        "Shopify",
+        "Spline 3D",
+        "Framer Motion",
+        "GSAP",
+        "Lighthouse",
+        "Brand Guidelines"
+      ]
+    },
+    {
+      "type": "services",
+      "tag": "Branded Web Services",
+      "title": "Everything your brand needs<br>to dominate its space.",
+      "lead": "Five core services designed to build, refine, and elevate your digital presence – from foundational brand strategy to interactive digital flagships.",
+      "items": [
+        {
+          "icon": "globe",
+          "style": "yellow",
+          "title": "Bespoke Branded Website Design",
+          "text": "Custom-designed digital platforms crafted around your unique brand story. We build pixel-perfect, responsive web experiences with custom interactions that command attention and drive business outcomes.",
+          "linkLabel": "Design my branded site",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "layers",
+          "style": "stone",
+          "title": "Brand Identity & Style Systems",
+          "text": "Complete visual identity creation—including logo design, color typography standards, design tokens, and UI design kits—ensuring cohesive storytelling across every touchpoint.",
+          "linkLabel": "Explore identity packages",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "target",
+          "style": "cream",
+          "title": "Custom Webflow & Headless Development",
+          "text": "Flexible, high-performance CMS builds that give your internal creative teams complete visual control without sacrificing speed, security, or brand design integrity.",
+          "linkLabel": "View CMS architectures",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "search",
+          "style": "dark",
+          "title": "Brand Strategy & Positioning",
+          "text": "In-depth competitive mapping, brand messaging frameworks, key value propositions, and visual positioning that set your company apart from legacy competitors.",
+          "linkLabel": "Define my position",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "wrench",
+          "style": "yellow",
+          "title": "Brand Overhaul & Digital Refresh",
+          "text": "Rebranding an existing business? We modernize outdated web design, refresh visual aesthetics, update voice and messaging, and seamlessly transition existing rankings without loss.",
+          "linkLabel": "Refresh my brand",
+          "linkHref": "#book"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "tag": "Comparison",
+      "title": "Why choose Lordevs to<br>build your branded website?",
+      "other": {
+        "title": "Generic Web Studios",
+        "items": [
+          "Cookie-cutter templates that look like competitors",
+          "Inconsistent visuals and disconnected branding",
+          "Hard-to-edit layouts with brittle visual code",
+          "Generic stock photos and forgettable identity",
+          "No strategic alignment with business goals"
+        ]
+      },
+      "us": {
+        "title": "Lordevs",
+        "items": [
+          "Bespoke visual design custom built for your brand",
+          "Unified visual design system & brand guidelines",
+          "Intuitive CMS setup tailored to your workflow",
+          "Custom visual assets, motion, and art direction",
+          "Strategic visual positioning built for conversions"
+        ]
+      },
+      "trustedText": "Trusted by visionary brands worldwide",
+      "logos": [
+        "ZenZap",
+        "sparkle",
+        "innovio",
+        "Craftgram",
+        "LumLabs"
+      ]
+    },
+    {
+      "type": "why",
+      "tag": "Why it matters",
+      "title": "Why does your business need<br>a branded website?",
+      "cards": [
+        {
+          "icon": "globe",
+          "style": "yellow",
+          "title": "Instant Market Authority",
+          "text": "A cohesive brand identity and custom website position you instantly as a leader, commanding premium market trust."
+        },
+        {
+          "icon": "search",
+          "style": "stone",
+          "title": "Distinct Competitive Edge",
+          "text": "Custom web aesthetics ensure your business stands out effortlessly in crowded markets."
+        },
+        {
+          "icon": "dollar",
+          "style": "cream",
+          "title": "Higher Perceived Value",
+          "text": "Refined typography, sleek visual design, and smooth user flow justify higher pricing for your offerings."
+        },
+        {
+          "icon": "bolt",
+          "style": "cream",
+          "wide": true,
+          "title": "Consistent Cross-Platform Voice",
+          "text": "From website to pitch decks, your digital brand speaks with clarity, power, and brand consistency.",
+          "linkLabel": "Book a Call",
+          "linkHref": "#book"
+        },
+        {
+          "icon": "wrench",
+          "style": "yellow",
+          "wide": true,
+          "title": "Scalable Digital Assets",
+          "text": "Modular brand design systems make it simple to launch new landing pages, products, or marketing campaigns.",
+          "linkLabel": "See brand systems",
+          "linkHref": "#services"
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "tag": "Testimonials",
+      "title": "What brand leaders say<br>about working with us",
+      "items": [
+        {
+          "variant": "hero",
+          "logo": "sparkle",
+          "quote": "Lordevs transformed our fragmented look into an authoritative, world-class brand. The new website raised our inbound lead quality almost overnight.",
+          "name": "Guillermo R.",
+          "role": "Head of Brand Strategy",
+          "avatarBg": "#FFC21A"
+        },
+        {
+          "quote": "The branded web platform they crafted captured our company culture perfectly. Our customers constantly compliment the design aesthetic.",
+          "name": "Priya R.",
+          "role": "Creative Director",
+          "avatarBg": "#0B0B0B",
+          "avatarColor": "#FFC21A"
+        },
+        {
+          "quote": "Working with Lordevs felt like expanding our in-house brand design team. Fast, hyper-detailed, and deeply invested in design precision.",
+          "name": "Daniel Q.",
+          "role": "Founder & CEO",
+          "avatarBg": "#F3E3A6"
+        },
+        {
+          "quote": "Our brand identity refresh gave us the confidence to pitch top-tier clients. The site performance and visual polish exceeded every expectation.",
+          "name": "Sarah W.",
+          "role": "Co-Founder, Bright Dental",
+          "avatarBg": "#FFD866"
+        },
+        {
+          "variant": "accent",
+          "logo": "sparkle",
+          "quote": "They don't just build websites; they establish digital brand presence. Best creative investment our company has made in years.",
+          "name": "James H.",
+          "role": "Managing Director",
+          "avatarBg": "#0B0B0B",
+          "avatarColor": "#FFC21A"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "tag": "Process",
+      "title": "Our 3-step approach to<br>crafting your brand web identity.",
+      "lead": "From discovery and visual design direction to final CMS deployment, our proven workflow builds memorable brands and high-performing websites.",
+      "steps": [
+        {
+          "icon": "search",
+          "title": "Discover & Position",
+          "text": "Phase 1: We uncover your unique brand story, audit key competitors, and define visual guidelines and site architecture."
+        },
+        {
+          "icon": "code",
+          "title": "Design & Prototype",
+          "text": "Phase 2: We craft bespoke visual assets, interactive prototypes, and custom UI component systems tailored to your brand identity."
+        },
+        {
+          "icon": "trending",
+          "title": "Build & Scale",
+          "text": "Phase 3: We develop your site with responsive, fast code, configure your CMS, and empower your team for long-term growth."
+        }
+      ],
+      "cta": {
+        "label": "Book Brand Consultation",
+        "href": "#book"
+      }
+    },
+    {
+      "type": "booking",
+      "tag": "Free Consultation",
+      "title": "Let's build a brand website<br>your audience remembers.",
+      "panel": {
+        "host": "Lordevs Team",
+        "subtitle": "Brand Strategy Session",
+        "title": "30 Min Discovery Call",
+        "details": [
+          "⏱ 30 min",
+          "💻 Google Meet",
+          "🌍 Your local timezone"
+        ]
+      },
+      "timeSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:30 AM",
+        "01:00 PM",
+        "02:30 PM",
+        "04:00 PM"
+      ],
+      "confirmLabel": "Confirm booking",
+      "emailSubject": "Brand Consultation Request"
+    },
+    {
+      "type": "faq",
+      "tag": "FAQ",
+      "title": "Got questions about branded<br>web design? We have answers.",
+      "items": [
+        {
+          "q": "What is a branded website?",
+          "a": "A branded website goes beyond generic web design. It is custom engineered around your visual identity, values, tone of voice, and business goals. Every layout, color palette, typography choice, and interaction is designed to communicate brand authority and convert your target audience."
+        },
+        {
+          "q": "What brand identity services does Lordevs offer?",
+          "a": "Lordevs provides full-spectrum digital brand services including bespoke website design, visual identity systems (logos, typography, color palettes, icon design), digital rebrands, brand positioning strategy, custom Webflow/WordPress design, and design system creation."
+        },
+        {
+          "q": "Can you help refine our existing brand identity?",
+          "a": "Yes! Whether you need a complete rebrand or a modern brand refresh, we audit your existing visual elements, elevate your visual language, and apply it seamlessly to a newly redesigned website without losing your established brand equity."
+        },
+        {
+          "q": "How long does a brand website design project take?",
+          "a": "A standard branded business website typically takes 4–8 weeks depending on project scope, custom interactive requirements, and content readiness. We provide a structured roadmap during kickoff to keep all creative deliverables on schedule."
+        },
+        {
+          "q": "What is included in your brand design guidelines?",
+          "a": "Our brand style guides include logo usage rules, typography scales, primary and secondary color schemes, component libraries, digital asset guidelines, and tone-of-voice recommendations to ensure brand consistency."
+        },
+        {
+          "q": "Will our team be able to manage and update the branded website?",
+          "a": "Absolutely. We build sites on intuitive CMS platforms (Webflow, WordPress, or Headless options like Sanity) and provide full training so your internal marketing team can publish pages and update content without breaking design integrity."
+        },
+        {
+          "q": "How do you ensure our branded website aligns with SEO?",
+          "a": "Design and performance go hand in hand. We optimize site structure, semantic markup, meta data, and site speed so your website ranks highly on Google while looking stunning to visitors."
+        },
+        {
+          "q": "Do you provide original copy and content design?",
+          "a": "Yes. We offer brand messaging and copywriting assistance to ensure your site's headline hooks, section descriptions, and calls-to-action reflect your brand's unique voice."
+        },
+        {
+          "q": "What makes Lordevs different from traditional design agencies?",
+          "a": "We fuse high-end design artistry with technical engineering. Instead of using generic templates, we create tailored digital experiences focused on brand authority, conversion rates, and long-term business growth."
+        },
+        {
+          "q": "Do we own all creative assets and brand files upon completion?",
+          "a": "Yes. You maintain 100% ownership of all brand guidelines, source design files (Figma), website code, CMS accounts, and custom visual assets after final project handover."
+        },
+        {
+          "q": "How do we get started on a branded web project?",
+          "a": "You can schedule a free 30-minute Brand Strategy Call through our booking calendar. We will review your goals, evaluate your current web presence, and present a custom proposal with clear timelines and deliverables."
+        },
+        {
+          "q": "Do you offer post-launch design and brand support?",
+          "a": "Yes. We offer ongoing brand design retainers and website maintenance plans to help you scale your brand assets, design new landing pages, and maintain peak performance as your business grows."
+        }
+      ]
+    }
+  ]
+}

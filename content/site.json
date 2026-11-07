@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "Lordevs",
+    "logo": "assets/logo.svg",
+    "logoDark": "assets/logo-dark.svg",
+    "logoMark": "assets/logo-mark.svg",
+    "footerWordmark": "Lordevs"
+  },
+
+  "url": "https://lordevs.com",
+  "language": "en",
+  "themeColor": "#FFC21A",
+
+  "contact": {
+    "email": "hello@lordevs.com",
+    "whatsappDisplay": "+92 307 1257828",
+    "whatsappNumber": "923071257828"
+  },
+
+  "avatars": [
+    { "letter": "A", "bg": "#FFC21A" },
+    { "letter": "S", "bg": "#0B0B0B", "color": "#FFC21A" },
+    { "letter": "M", "bg": "#F3E3A6" },
+    { "letter": "Z", "bg": "#6b6b6b", "color": "#fff" }
+  ],
+
+  "navigation": {
+    "links": [
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Testimonials", "href": "#testimonials" },
+      { "label": "Process", "href": "#process" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "cta": { "label": "Let's Collaborate", "href": "#book" }
+  },
+
+  "footer": {
+    "columns": [
+      {
+        "title": "Navigation",
+        "links": [
+          { "label": "Home", "href": "#top" },
+          { "label": "About", "href": "#about" },
+          { "label": "Services", "href": "#services" },
+          { "label": "Projects", "href": "#testimonials" }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          { "label": "WhatsApp: {{whatsapp}}", "href": "{{whatsappUrl}}", "external": true },
+          { "label": "{{email}}", "href": "mailto:{{email}}" },
+          { "label": "Book 30 Min Free", "href": "#book", "accent": true }
+        ]
+      }
+    ],
+    "copyright": "© {{year}} Lordevs. All rights reserved.",
+    "legalLinks": [
+      { "label": "Privacy & Cookie Policy", "href": "privacy.html" }
+    ]
+  },
+
+  "cookieBanner": {
+    "enabled": true,
+    "title": "We value your privacy.",
+    "text": "This site uses cookies and local storage to remember your preferences and, with your consent, to understand how it is used. Read our",
+    "policyLabel": "Privacy & Cookie Policy",
+    "policyHref": "privacy.html",
+    "acceptLabel": "Accept",
+    "declineLabel": "Decline"
+  }
+}
