@@ -18,7 +18,7 @@
   --shadow:0 20px 50px -20px rgba(0,0,0,.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-padding-top:80px} /* no scroll-behavior:smooth - it breaks ScrollTrigger measuring; links are smoothed in script.js */
 html.is-loading{overflow:hidden}
 body{font-family:'Quicksand',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:clip;padding-top:78px}
 img{max-width:100%;display:block}
@@ -95,6 +95,8 @@ mark{background:linear-gradient(transparent 58%,var(--yellow) 58% 92%,transparen
 .avatars{display:flex}
 .avatars span{width:34px;height:34px;border-radius:50%;background:var(--c);border:2px solid #fff;margin-left:-9px;display:grid;place-items:center;font-size:.78rem;font-weight:700;color:var(--black)}
 .avatars span:first-child{margin-left:0}
+.avatars span{overflow:hidden}
+.avatars img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
 .hero__side{max-width:480px}
 .hero__side p{font-size:.95rem;color:#6a6a6a;margin-bottom:20px}
 .hero__side b{color:var(--black);font-weight:600}
@@ -210,6 +212,9 @@ mark{background:linear-gradient(transparent 58%,var(--yellow) 58% 92%,transparen
 .book{background:radial-gradient(110% 90% at 50% 0%,#2b2200 0%,#0b0b0b 65%);color:#fff;padding:100px 0 110px;text-align:center;position:relative}
 .booker{display:grid;grid-template-columns:230px 1fr 210px;gap:0;max-width:900px;margin:50px auto 0;background:#fff;color:var(--ink);border-radius:var(--radius);text-align:left;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
 .booker>*{padding:26px}
+.booker--calendly{display:block;max-width:1000px;background:transparent;box-shadow:none;border-radius:0;overflow:visible}
+.booker--calendly>*{padding:0}
+.booker--calendly .calendly-inline-widget{min-width:320px;height:700px}
 .booker__info{border-right:1px solid var(--line);background:#fafafa}
 .booker__who{display:flex;align-items:center;gap:10px;margin-bottom:22px}
 .booker__who small{display:block;color:var(--muted);font-size:.78rem}
@@ -240,7 +245,7 @@ mark{background:linear-gradient(transparent 58%,var(--yellow) 58% 92%,transparen
 .quote p{font-size:.88rem;color:#444}
 .quote--hero{grid-row:span 2;background:var(--stone);border:0}
 .quote--hero p{font-size:1.35rem;line-height:1.3;font-weight:500;color:var(--black);letter-spacing:-.02em}
-.quote--accent{grid-column:2/span 2;background:var(--yellow);border:0}
+.quote--accent{grid-column:1/-1;background:var(--yellow);border:0}
 .quote--accent p{color:var(--black);font-size:1.05rem;font-weight:500}
 .qlogo{font-weight:700;letter-spacing:-.03em;font-size:1.1rem}
 .quote footer{display:flex;align-items:center;gap:12px}
@@ -399,6 +404,7 @@ mark{background-repeat:no-repeat;background-size:100% 100%}
 .logos-row{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:38px;flex-wrap:wrap}
 .lg{display:inline-flex;align-items:center;gap:10px;font-size:1.45rem;font-weight:700;letter-spacing:-.03em;color:var(--black)}
 .lg__ico{width:30px;height:30px;display:block}
+.lg--img img{height:34px;width:auto;max-width:150px;object-fit:contain;display:block;mix-blend-mode:multiply}
 .lg__ico--1{border-radius:50%;border:5px solid var(--yellow);box-shadow:inset 0 0 0 4px #0b0b0b}
 .lg__ico--2{border-radius:50% 50% 50% 8px;background:var(--black)}
 .lg__ico--3{border-radius:8px 50% 8px 50%;background:linear-gradient(135deg,var(--yellow),var(--yellow-600))}
@@ -547,7 +553,7 @@ body{padding-top:82px}
 @media (max-width:760px){.services.container{padding-block:84px 96px}}
 .svc>div:not(.svc__ico){display:contents}
 .svc>.svc__ico{display:grid}
-.svc-list .svc{grid-template-columns:64px 250px 1fr 200px}
+.svc-list .svc{grid-template-columns:64px 250px minmax(0,1fr) auto} /* button column sizes to its label - a fixed 200px let long labels overlap the text */
 @media (max-width:980px){.svc-list .svc{grid-template-columns:56px 1fr}}
 
 /* ============ NAV: identical at top and when scrolled ============ */
@@ -560,7 +566,8 @@ body{padding-top:82px}
 }
 
 /* ============ PERFORMANCE ============ */
-.work__track,.tech__track{will-change:transform}
+.work__track{will-change:transform}
+.tech__track span{will-change:transform}
 .work{contain:layout paint}
 
 /* ============ FAQ accordion states (class-driven so open/close can animate) ============ */

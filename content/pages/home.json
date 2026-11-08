@@ -9,10 +9,10 @@
     {
       "type": "hero",
       "title": {
-        "line1": "Branded web design that defines,",
-        "line2": "engages & <mark>scales</mark>."
+        "line1": "Websites that turn your business  ",
+        "line2": "into the obvious choice"
       },
-      "subtitle": "Lordevs is a <b>brand strategy and web design agency</b> building bespoke <b>branded business websites</b>, premium <b>brand identity systems</b>, custom <b>WordPress & Webflow CMS</b> sites, and digital experiences that turn audience attention into brand authority.",
+      "subtitle": "Your business deserves to be seen. We design websites that bring you new customers, credibility, and growth, even while you sleep.",
       "cta": {
         "label": "Book a Brand Strategy Call",
         "href": "#book"
@@ -23,11 +23,26 @@
       },
       "logosTitle": "Loved by 100+ ambitious startups and category leaders around the world",
       "logos": [
-        "ZenZap",
-        "sparkle",
-        "innovio",
-        "Craftgram",
-        "LumLabs"
+        {
+          "name": "Dotcode",
+          "image": "assets/logo-dotcode.png"
+        },
+        {
+          "name": "Cartwright King",
+          "image": "assets/logo-cartwright-king.png"
+        },
+        {
+          "name": "Gripco",
+          "image": "assets/logo-gripco.png"
+        },
+        {
+          "name": "Compl-AI",
+          "image": "assets/logo-compl-ai.png"
+        },
+        {
+          "name": "Brilliant AI",
+          "image": "assets/logo-brilliant-ai.png"
+        }
       ]
     },
     {
@@ -107,20 +122,24 @@
     },
     {
       "type": "techBand",
-      "ariaLabel": "Brand design tools and development platforms we use",
+      "ariaLabel": "Industries we serve",
       "items": [
-        "Figma",
-        "Webflow",
-        "WordPress",
-        "Next.js",
-        "Sanity",
-        "Strapi",
-        "Shopify",
-        "Spline 3D",
-        "Framer Motion",
-        "GSAP",
-        "Lighthouse",
-        "Brand Guidelines"
+        "Healthcare",
+        "Real Estate",
+        "Construction Companies",
+        "Corporate Companies",
+        "Tech Companies",
+        "Fast Food Restaurants",
+        "E-commerce & Retail",
+        "Fintech & Banking",
+        "Education & E-learning",
+        "Hospitality & Travel",
+        "Logistics & Supply Chain",
+        "Legal & Professional Services",
+        "Fitness & Wellness",
+        "Automotive",
+        "Non-profits & NGOs",
+        "Media & Entertainment"
       ]
     },
     {
@@ -253,40 +272,46 @@
       "title": "What brand leaders say<br>about working with us",
       "items": [
         {
+          "quote": "I have booked over 100+ Fiverr projects, and the Lordevs team definitely belongs among the top ones. They are very fast developers, always understood the tasks perfectly, brought in valid recommendation points I didn’t even think of, and overall was a pleasure to work with. I am continuing to work with them.",
+          "name": "River",
+          "role": "Founder of Moveevent · Fiverr · Switzerland",
+          "avatarBg": "#FFC21A",
           "variant": "hero",
-          "logo": "sparkle",
-          "quote": "Lordevs transformed our fragmented look into an authoritative, world-class brand. The new website raised our inbound lead quality almost overnight.",
-          "name": "Guillermo R.",
-          "role": "Head of Brand Strategy",
-          "avatarBg": "#FFC21A"
+          "logo": "fiverr."
         },
         {
-          "quote": "The branded web platform they crafted captured our company culture perfectly. Our customers constantly compliment the design aesthetic.",
-          "name": "Priya R.",
-          "role": "Creative Director",
+          "quote": "Working with the Lordevs team has been the best decision. They really have a deep understanding of crafting an AI function. They don’t take shortcuts, they advise you at every step, and they make sure to include you. Hoping to work with them again soon. Thank you, Arsalan!",
+          "name": "Leena",
+          "role": "Fiverr client · Saudi Arabia",
           "avatarBg": "#0B0B0B",
           "avatarColor": "#FFC21A"
         },
         {
-          "quote": "Working with Lordevs felt like expanding our in-house brand design team. Fast, hyper-detailed, and deeply invested in design precision.",
-          "name": "Daniel Q.",
-          "role": "Founder & CEO",
+          "quote": "I loved the final product. It was per the requirements. The vendor suggested ideas to improve the product, and the final product exceeded expectations. The vendor also prepared good demos and improved the product as required. Thank you!",
+          "name": "Shambu Nath",
+          "role": "Founder of Parlezhub · Fiverr · USA",
           "avatarBg": "#F3E3A6"
         },
         {
-          "quote": "Our brand identity refresh gave us the confidence to pitch top-tier clients. The site performance and visual polish exceeded every expectation.",
-          "name": "Sarah W.",
-          "role": "Co-Founder, Bright Dental",
+          "quote": "The UI design was very good and was completed on time, even with all the last-minute changes we wanted.",
+          "name": "Nibras",
+          "role": "Fiverr client · UAE",
           "avatarBg": "#FFD866"
         },
         {
-          "variant": "accent",
-          "logo": "sparkle",
-          "quote": "They don't just build websites; they establish digital brand presence. Best creative investment our company has made in years.",
-          "name": "James H.",
-          "role": "Managing Director",
+          "quote": "Working with the Lordevs team was a great experience! Their professionalism in software development is top-notch, and their quick responsiveness and proactive communication made collaboration a breeze.",
+          "name": "Alicia Persaud",
+          "role": "Founder of Mindhush · Fiverr · Romania",
+          "avatarBg": "#F3E3A6"
+        },
+        {
+          "quote": "I’ve been working with the Lordevs team for over 6 months now, and the biggest reason I continue is trust. They’re clear with requirements, propose practical solutions, and handle the work without unnecessary back-and-forth. I can rely on them to get things done without the stress of constantly following up.",
+          "name": "carolynmaya",
+          "role": "Fiverr client · USA",
           "avatarBg": "#0B0B0B",
-          "avatarColor": "#FFC21A"
+          "avatarColor": "#FFC21A",
+          "variant": "accent",
+          "logo": "fiverr."
         }
       ]
     },
@@ -321,6 +346,7 @@
       "type": "booking",
       "tag": "Free Consultation",
       "title": "Let's build a brand website<br>your audience remembers.",
+      "calendlyUrl": "https://calendly.com/arsalanbashir831/30min?hide_event_type_details=1&hide_gdpr_banner=1",
       "panel": {
         "host": "Lordevs Team",
         "subtitle": "Brand Strategy Session",

@@ -5,6 +5,7 @@
    content/site.json        shared settings (logo, contact, nav, footer, cookie banner)
    content/pages/*.json     one file per page (SEO meta + ordered list of sections)
    build.mjs                turns the JSON into the HTML pages (index.html, privacy.html, ...)
+                            plus sitemap.xml and robots.txt
 
    Run:   node build.mjs          (build once)
           node dev.mjs            (local server that rebuilds + reloads when you save a JSON file)
@@ -14,6 +15,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT = path.join(ROOT, 'content');
@@ -116,7 +118,9 @@ function applyTokens(value, tokens) {
 }
 
 /* ---------------------------------------------------------------- shared fragments */
-const avatarSpan = a => `<span style="--c:${attr(a.bg || '#FFC21A')}${a.color ? `;color:${attr(a.color)}` : ''}">${rich(a.letter || '')}</span>`;
+const avatarSpan = a => a.image
+  ? `<span style="--c:${attr(a.bg || '#FFC21A')}"><img src="${attr(a.image)}" alt="" loading="lazy" decoding="async"></span>`
+  : `<span style="--c:${attr(a.bg || '#FFC21A')}${a.color ? `;color:${attr(a.color)}` : ''}">${rich(a.letter || '')}</span>`;
 const pillArrow = '<span class="btn-pill__ico" aria-hidden="true">↗</span>';
 
 function link(l, where, cls = '') {
@@ -147,7 +151,9 @@ const SECTIONS = {
     need(s.title, ['line1', 'line2'], `${w} → title`);
     need(s, ['subtitle'], w); need(s.cta, ['label', 'href'], `${w} → cta`);
     const proof = s.proof || {};
-    const logos = (s.logos || []).map((n, i) => `      <span class="lg"><i class="lg__ico lg__ico--${(i % 5) + 1}"></i>${rich(n)}</span>`).join('\n');
+    const logos = (s.logos || []).map((n, i) => typeof n === 'object' && n.image
+      ? `      <span class="lg lg--img"><img src="${attr(n.image)}" alt="${attr(n.name || '')}" loading="lazy" decoding="async"></span>`
+      : `      <span class="lg"><i class="lg__ico lg__ico--${(i % 5) + 1}"></i>${rich(typeof n === 'object' ? n.name : n)}</span>`).join('\n');
     return `<section class="hero container"${idAttr(s)}>
   <h1 class="hero__title">
     <span class="t-dark">${rich(s.title.line1)}</span>
@@ -336,6 +342,18 @@ ${steps.join('\n')}
   },
 
   booking(s, ctx, w) {
+    if (s.calendlyUrl) {
+      return `<section class="book"${idAttr(s, 'book')}>
+  <div class="book__3d" aria-hidden="true"><canvas id="bookCanvas"></canvas></div>
+  <div class="container">
+    ${sectionHead({ tag: s.tag, title: s.title }, true)}
+    <div class="booker booker--calendly">
+      <div class="calendly-inline-widget" data-url="${attr(s.calendlyUrl)}"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</section>`;
+    }
     need(s.panel, ['host', 'title'], `${w} → panel`);
     const slots = list(s, 'timeSlots', w);
     const email = s.email || ctx.site.contact.email;
@@ -457,7 +475,7 @@ function renderHead(page, ctx, sectionsData) {
   const m = page.meta || {};
   need(m, ['title', 'description'], `${page.file} → meta`);
   const url = (site.url || '').replace(/\/$/, '');
-  const canonical = url ? `${url}/${page.output === HOME_OUTPUT ? '' : page.output}` : '';
+  const canonical = url ? pageUrl(site, page) : '';
   const ld = [];
   if (page.output === HOME_OUTPUT && url) {
     ld.push({
@@ -591,7 +609,7 @@ export function build({ quiet = false } = {}) {
   const files = fs.readdirSync(PAGES_DIR).filter(f => f.endsWith('.json') && !f.startsWith('_')).sort();
   if (!files.length) fail('content/pages/ has no .json page files');
 
-  const written = [];
+  const written = [], pagesBuilt = [];
   for (const f of files) {
     const file = path.join(PAGES_DIR, f);
     const page = applyTokens(readJson(file), tokens);
@@ -599,10 +617,62 @@ export function build({ quiet = false } = {}) {
     need(page, ['output'], `${f}`);
     const html = renderPage(page, ctx);
     fs.writeFileSync(path.join(ROOT, page.output), html);
+    pagesBuilt.push(page);
     written.push(`${f}  →  ${page.output}`);
   }
-  if (!quiet) console.log(`✔ Built ${written.length} page${written.length > 1 ? 's' : ''}:\n  ${written.join('\n  ')}`);
+  written.push(...writeSeoFiles(site, pagesBuilt));
+  if (!quiet) console.log(`✔ Built ${written.length} file${written.length > 1 ? 's' : ''}:\n  ${written.join('\n  ')}`);
   return written;
+}
+
+/* ---------------------------------------------------------------- sitemap.xml + robots.txt */
+const pageUrl = (site, page) => `${(site.url || '').replace(/\/$/, '')}/${page.output === HOME_OUTPUT ? '' : page.output}`; // same as the canonical
+const isoDay = d => d.toISOString().slice(0, 10);
+
+/* <lastmod> = when the page's content really changed (not the build time):
+   uncommitted edits -> today; otherwise the date of the last commit that touched the page JSON;
+   if git isn't available (e.g. a shallow CI clone) keep the date already in sitemap.xml. */
+function lastModified(file, previous) {
+  const rel = path.relative(ROOT, file);
+  try {
+    const git = args => execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    if (git(['status', '--porcelain', '--', rel])) return isoDay(new Date());
+    const committed = git(['log', '-1', '--format=%cI', '--', rel]);
+    if (committed) return isoDay(new Date(committed));
+  } catch { /* no git */ }
+  return previous || isoDay(new Date());
+}
+
+function writeSeoFiles(site, pages) {
+  if (!site.url) fail('site.json → "url" is needed to build sitemap.xml and robots.txt (e.g. "https://lordevs.com")');
+  const base = site.url.replace(/\/$/, '');
+  const sitemapFile = path.join(ROOT, 'sitemap.xml');
+  const previous = {};
+  if (fs.existsSync(sitemapFile)) {
+    for (const m of fs.readFileSync(sitemapFile, 'utf8').matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) previous[m[1]] = m[2];
+  }
+  const entries = pages
+    .filter(p => !(p.meta && p.meta.noindex))                     // only indexable pages
+    .map(p => ({ loc: pageUrl(site, p), lastmod: lastModified(p.file, previous[pageUrl(site, p)]) }))
+    .sort((a, b) => a.loc.length - b.loc.length);                 // home page first
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<!-- GENERATED by build.mjs - lists every page in content/pages/ that is not "noindex" -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${entries.map(e => `  <url>\n    <loc>${attr(e.loc)}</loc>\n    <lastmod>${e.lastmod}</lastmod>\n  </url>`).join('\n')}
+</urlset>
+`;
+  fs.writeFileSync(sitemapFile, xml);
+
+  const robots = `# GENERATED by build.mjs
+# All search engines and AI search crawlers (Googlebot, Bingbot, OAI-SearchBot, PerplexityBot, ...) are welcome.
+User-agent: *
+Allow: /
+Disallow: /content/
+
+Sitemap: ${base}/sitemap.xml
+`;
+  fs.writeFileSync(path.join(ROOT, 'robots.txt'), robots);
+  return [`sitemap.xml  (${entries.length} URL${entries.length === 1 ? '' : 's'})`, 'robots.txt'];
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

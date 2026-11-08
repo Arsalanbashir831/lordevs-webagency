@@ -9,6 +9,19 @@
   const preview = /[?&]cms-preview/.test(location.search);   // page is shown inside the CMS editor
   if (!location.hash && !preview) window.scrollTo(0, 0);
 
+  /* Smooth scrolling for in-page links is done here, NOT with CSS `scroll-behavior:smooth`:
+     the CSS version also smooths the instant scroll jumps ScrollTrigger makes while re-measuring,
+     so it measured every trigger ~one scroll-offset wrong and paused the marquees on screen. */
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || a.getAttribute('href').length < 2) return;
+    const target = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); // honours scroll-padding-top
+    history.pushState(null, '', a.getAttribute('href'));
+  });
+
   const yrEl = $('#yr'); if (yrEl) yrEl.textContent = new Date().getFullYear();
 
   /* ---------- Nav ---------- */
@@ -479,13 +492,38 @@
 
     /* --- marquees: paused while off-screen, speed up with scroll speed --- */
     const marquees = [];
-    const marquee = (track, from, to, duration, trigger) => {
-      const tw = gsap.fromTo(track, { xPercent: from }, { xPercent: to, repeat: -1, duration, ease: 'none' });
+    const addMarquee = (tw, trigger) => {
       ScrollTrigger.create({ trigger, start: 'top bottom', end: 'bottom top', onToggle: self => tw.paused(!self.isActive) });
       marquees.push(tw);
     };
+    const marquee = (track, from, to, duration, trigger) =>
+      addMarquee(gsap.fromTo(track, { xPercent: from }, { xPercent: to, repeat: -1, duration, ease: 'none' }), trigger);
     marquee('.work__track', 0, -50, 50, '.work');
-    marquee('.tech__track', -50, 0, 38, '.tech');
+
+    /* Industry band: each word moves on its own and wraps around, instead of sliding one giant strip.
+       A single strip of 16 long words gets 15-20k px wide on big screens - past the GPU layer size
+       browsers (esp. Safari) will composite - so it froze after a second. Per-word layers stay small. */
+    (() => {
+      const track = $('.tech__track'); if (!track) return;
+      const spans = [...track.children];
+      const setX = spans.map(s => gsap.quickSetter(s, 'x', 'px'));
+      let W = 0, lefts = [], widths = [];
+      const measure = () => {                            // offsetLeft/Width ignore transforms, so no reset needed
+        W = track.scrollWidth;
+        lefts = spans.map(s => s.offsetLeft);
+        widths = spans.map(s => s.offsetWidth);
+      };
+      const state = { p: 0 };
+      const render = () => {
+        if (!W) return;
+        const shift = state.p * W;                       // moves right, like before
+        spans.forEach((s, i) => setX[i](gsap.utils.wrap(-widths[i], W - widths[i], lefts[i] + shift) - lefts[i]));
+      };
+      measure(); render();
+      ScrollTrigger.addEventListener('refresh', () => { measure(); render(); }); // resize, fonts, load
+      // 76s per full loop = same speed as the old 38s per half
+      addMarquee(gsap.to(state, { p: 1, duration: 76, ease: 'none', repeat: -1, onUpdate: render }), '.tech');
+    })();
     let prevY = window.scrollY, boost = 0, appliedScale = 1;
     gsap.ticker.add(() => {
       const y = window.scrollY;

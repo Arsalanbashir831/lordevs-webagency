@@ -15,23 +15,12 @@ content/
 
 ---
 
-## 0. The visual editor (CMS)
+## 0. Generated SEO files
 
-```bash
-node dev.mjs          # then open  http://localhost:3000/admin/
-```
+Every build also writes **`sitemap.xml`** (every page that isn't `"noindex"`) and **`robots.txt`** (allows all crawlers and points to the sitemap).
+Don't edit them by hand. A page's `<lastmod>` date is the date its JSON file was last committed (today if it has uncommitted edits).
 
-A friendly editor for everything below – no JSON knowledge needed:
-
-- **Pages** in the sidebar (and **New page**), plus **Site settings** (logo, contact, menu, footer, cookie banner)
-- each page is a list of **sections**: drag to reorder, click to edit, eye to hide, duplicate, delete, **Add section**
-- forms with text fields, colour pickers, an icon picker, and add / reorder / delete for every list (services, FAQ, steps…)
-- a **live preview** (desktop / tablet / mobile) that jumps to the section you open and refreshes when you save
-- **Save** (or `Cmd/Ctrl + S`) writes the JSON file and rebuilds the site; if a change would break the build it is rolled back and you see why
-- a **JSON** tab for the raw file, and a copy of the previous version of every saved file in `content/.backups/` (last 30)
-
-The editor runs only on your computer (it listens on `127.0.0.1` and refuses requests from other websites), so there is nothing to log in to
-and nothing is exposed online. Publish the generated HTML (`index.html`, `privacy.html`, …) – the admin is only for you.
+> The visual CMS dashboard (`/admin/`) has been removed for now. Edit the JSON files directly. The dashboard is still in git history if it's needed again.
 
 ---
 
@@ -102,7 +91,7 @@ Every section is `{ "type": "…", …fields }`. Optional on all: `"enabled": fa
 | `why` | `tag`, `title`, `cards[]` → `icon`, `style`, `title`, `text`; add `"wide": true` + `linkLabel`/`linkHref` for the big cards |
 | `testimonials` | `tag`, `title`, `items[]` → `quote`, `name`, `role`, `avatarBg`, optional `avatarColor`, `logo`, `variant` (`hero` \| `accent`) |
 | `process` | `tag`, `title`, `lead`, `steps[]` → `icon`, `title`, `text` (numbered automatically), `cta{label,href}` |
-| `booking` | `tag`, `title`, `panel{host,subtitle,title,details[]}`, `timeSlots[]`, `confirmLabel`, `emailSubject`, optional `email` |
+| `booking` | `tag`, `title`, optional `calendlyUrl` (embeds Calendly and ignores the fields below), `panel{host,subtitle,title,details[]}`, `timeSlots[]`, `confirmLabel`, `emailSubject`, optional `email` |
 | `faq` | `tag`, `title`, `items[]` → `q`, `a` |
 | `legal` | `title`, `updated`, `blocks[]` → optional `heading`, `paragraphs[]`, `list[]` (used for privacy / terms pages) |
 

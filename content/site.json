@@ -12,16 +12,16 @@
   "themeColor": "#FFC21A",
 
   "contact": {
-    "email": "hello@lordevs.com",
+    "email": "arsalanbashir831@gmail.com",
     "whatsappDisplay": "+92 307 1257828",
     "whatsappNumber": "923071257828"
   },
 
   "avatars": [
-    { "letter": "A", "bg": "#FFC21A" },
-    { "letter": "S", "bg": "#0B0B0B", "color": "#FFC21A" },
-    { "letter": "M", "bg": "#F3E3A6" },
-    { "letter": "Z", "bg": "#6b6b6b", "color": "#fff" }
+    { "letter": "A", "bg": "#FFC21A", "image": "assets/avatar-1.png" },
+    { "letter": "S", "bg": "#0B0B0B", "color": "#FFC21A", "image": "assets/avatar-2.png" },
+    { "letter": "M", "bg": "#F3E3A6", "image": "assets/avatar-3.png" },
+    { "letter": "Z", "bg": "#6b6b6b", "color": "#fff", "image": "assets/avatar-4.png" }
   ],
 
   "navigation": {
@@ -51,7 +51,7 @@
         "links": [
           { "label": "WhatsApp: {{whatsapp}}", "href": "{{whatsappUrl}}", "external": true },
           { "label": "{{email}}", "href": "mailto:{{email}}" },
-          { "label": "Book 30 Min Free", "href": "#book", "accent": true }
+          { "label": "Book 30 Min Free", "href": "https://calendly.com/arsalanbashir831/30min", "accent": true, "external": true }
         ]
       }
     ],
